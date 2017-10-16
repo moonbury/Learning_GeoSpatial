@@ -1,7 +1,7 @@
 # Read FTP data via the web
-import urllib.request
-import urllib.parse
-import urllib.error
+import urllib2.request
+import urllib2.parse
+import urllib2.error
 server = "ftp.ngdc.noaa.gov"
 dir = "hazards/DART/20070815_peru"
 fileName = "21415_from_20070727_08_55_15_tides.txt"

@@ -1,13 +1,13 @@
 # Extract a zipped shapefile via a url
-import urllib.request
-import urllib.parse
-import urllib.error
+import urllib2
+import urllib2
+import urllib
 import zipfile
 import io
 import struct
 
 url = "https://github.com/GeospatialPython/Learning/raw/master/hancock.zip"
-cloudshape = urllib.request.urlopen(url)
+cloudshape = urllib2.urlopen(url)
 memoryshape = io.BytesIO(cloudshape.read())
 zipshape = zipfile.ZipFile(memoryshape)
 cloudshp = zipshape.read("hancock.shp")

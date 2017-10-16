@@ -11,8 +11,10 @@ except:
 import shapefile
 
 r = shapefile.Reader("hancock.shp")
+
 xdist = r.bbox[2] - r.bbox[0]
 ydist = r.bbox[3] - r.bbox[1]
+print(xdist)
 iwidth = 400
 iheight = 600
 xratio = iwidth / xdist

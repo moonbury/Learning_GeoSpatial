@@ -10,6 +10,7 @@ src = "FalseColor.tif"
 # load the source image into an array
 arr = gdal_array.LoadFile(src)
 
+print (arr.shape)
 # swap bands 1 and 2 for a natural color image.
 # We will use numpy "advanced slicing" to reorder the bands.
 # Using the source image

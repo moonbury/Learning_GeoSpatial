@@ -92,7 +92,7 @@ header += "NODATA_value      {}\n".format(NODATA)
 
 # Open the output file, add the header, save the array
 with open(target, "wb") as f:
-    f.write(bytes(header, 'UTF-8'))
+    f.write(bytes(header)) #, 'UTF-8')
     # The fmt string ensures we output floats
     # that have at least one number but only
     # two decimal places

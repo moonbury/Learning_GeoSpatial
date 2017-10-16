@@ -12,6 +12,8 @@ r = shapefile.Reader("contour.shp")
 # Setup the world to pixels conversion
 xdist = r.bbox[2] - r.bbox[0]
 ydist = r.bbox[3] - r.bbox[1]
+print(r.bbox[0],r.bbox[1],r.bbox[2], r.bbox[3])
+print(xdist, ydist)
 iwidth = 800
 iheight = 600
 xratio = iwidth/xdist

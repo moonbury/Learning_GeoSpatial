@@ -10,6 +10,7 @@ r = shapefile.Reader("roadtrl020")
 w = shapefile.Writer(r.shapeType)
 # Copy the database fields to the writer
 w.fields = list(r.fields)
+
 # Our selection box that contains Puerto Rico
 xmin = -67.5
 xmax = -65.0

@@ -92,15 +92,15 @@ for pane in window:
 
 # Open the output file, add the header, save the slope grid
 with open(slopegrid, "wb") as f:
-    f.write(bytes(header, 'UTF-8'))
+    f.write(bytes(header))  #, 'UTF-8')
     np.savetxt(f, slope, fmt="%4i")
 
 # Open the output file, add the header, save the slope grid
 with open(aspectgrid, "wb") as f:
-    f.write(bytes(header, 'UTF-8'))
+    f.write(bytes(header))
     np.savetxt(f, aspect, fmt="%4i")
 
 # Open the output file, add the header, save the array
 with open(shadegrid, "wb") as f:
-    f.write(bytes(header, 'UTF-8'))
+    f.write(bytes(header))
     np.savetxt(f, shaded, fmt="%4i")

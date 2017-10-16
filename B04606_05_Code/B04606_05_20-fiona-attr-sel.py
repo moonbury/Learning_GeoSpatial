@@ -16,3 +16,30 @@ with fiona.open("MS_UrbanAnC10.shp") as sf:
                     schema=schm) as w:
             for rec in filtered:
                 w.write(rec)
+
+
+import matplotlib.pyplot as plt
+import shapefile
+
+shpFilePath = "MS_UrbanAnC10.shp"  
+listx=[]
+listy=[]
+test = shapefile.Reader(shpFilePath)
+for sr in test.shapeRecords():
+    for xNew,yNew in sr.shape.points:
+        listx.append(xNew)
+        listy.append(yNew)
+plt.plot(listx,listy)
+plt.show()
+
+
+shpFilePath = "MS_Urban_Fiona_Subset.shp"  
+listx=[]
+listy=[]
+test = shapefile.Reader(shpFilePath)
+for sr in test.shapeRecords():
+    for xNew,yNew in sr.shape.points:
+        listx.append(xNew)
+        listy.append(yNew)
+plt.plot(listx,listy)
+plt.show()
