@@ -33,4 +33,5 @@ ogr_lyr.CreateField(field_defn)
 
 ds = gdal.Open('dem.asc')
 gdal.ContourGenerate(ds.GetRasterBand(1), 400, 10, [], 0, 0, ogr_lyr, 0, 1)
-ogr_ds = None
+#ogr_ds = None
+ogr_ds.Destroy()
