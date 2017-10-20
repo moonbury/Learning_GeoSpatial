@@ -180,7 +180,7 @@ for i in range(6):
 
 # Open the output file, add the hdr, save the array
 with open(target, "wb") as f:
-    f.write(bytes(header, 'UTF-8'))
+    f.write(bytes(header))
     np.savetxt(f, path, fmt="%4i")\
 
 print("Done!")

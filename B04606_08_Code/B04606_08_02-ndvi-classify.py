@@ -4,7 +4,9 @@ by "pushing" the NDVI through
 masks defined by the desired
 range of values for each class.
 """
-import gdal_array as gd
+
+from osgeo import gdal_array as gd
+#import gdal_array as gd
 import operator
 from functools import reduce
 

@@ -1,4 +1,4 @@
-import gdal_array as gd
+from osgeo import gdal_array as gd
 try:
     import Image
 except:
