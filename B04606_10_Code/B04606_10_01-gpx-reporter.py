@@ -491,7 +491,7 @@ centy = miny + ((maxy-miny)/2)
 # WeatherUnderground API key
 # You must register for free at wunderground.com
 # to get a key to insert here.
-api_key = "18a1726f53fa6efb"
+api_key = "5b25c6bb1d0e49ed" 
 
 # Get the location id of the route using the bounding box
 # centroid and the geolookup api
