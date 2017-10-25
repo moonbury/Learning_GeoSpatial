@@ -1,0 +1,318 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "geolookup": 1
+  }
+	}
+		,	"location": {
+		"type":"CITY",
+		"country":"US",
+		"country_iso3166":"US",
+		"country_name":"USA",
+		"state":"ME",
+		"city":"Blackinton Corners",
+		"tz_short":"EDT",
+		"tz_long":"America/New_York",
+		"lat":"44.110000",
+		"lon":"-69.120000",
+		"zip":"04841",
+		"magic":"2",
+		"wmo":"99999",
+		"l":"/q/zmw:04841.2.99999",
+		"requesturl":"US/ME/Blackinton_Corners.html",
+		"wuiurl":"https://www.wunderground.com/US/ME/Blackinton_Corners.html",
+		"nearby_weather_stations": {
+		"airport": {
+		"station": [
+		{ "city":"Rockland", "state":"ME", "country":"US", "icao":"KRKD", "lat":"44.06000137", "lon":"-69.09999847" }
+		,{ "city":"Wiscasset", "state":"ME", "country":"US", "icao":"KIWI", "lat":"43.95999908", "lon":"-69.70999908" }
+		,{ "city":"Augusta", "state":"ME", "country":"US", "icao":"KAUG", "lat":"44.31999969", "lon":"-69.80000305" }
+		,{ "city":"Waterville", "state":"ME", "country":"US", "icao":"KWVL", "lat":"44.52999878", "lon":"-69.68000031" }
+		]
+		}
+		,
+		"pws": {
+		"station": [
+		{
+		"neighborhood":"Rockland Historic District",
+		"city":"Rockland",
+		"state":"ME",
+		"country":"US",
+		"id":"KMEROCKL6",
+		"lat":44.106369,
+		"lon":-69.114418,
+		"distance_km":0,
+		"distance_mi":0
+		},
+		{
+		"neighborhood":"Upper Park Street",
+		"city":"Rockland",
+		"state":"ME",
+		"country":"US",
+		"id":"KMEROCKL2",
+		"lat":44.101517,
+		"lon":-69.131699,
+		"distance_km":1,
+		"distance_mi":0
+		},
+		{
+		"neighborhood":"Journeys End Marina",
+		"city":"Rockland",
+		"state":"ME",
+		"country":"US",
+		"id":"KMEROCKL5",
+		"lat":44.104580,
+		"lon":-69.104050,
+		"distance_km":1,
+		"distance_mi":0
+		},
+		{
+		"neighborhood":"Thomaston",
+		"city":"Thomaston",
+		"state":"ME",
+		"country":"US",
+		"id":"KMETHOMA4",
+		"lat":44.086731,
+		"lon":-69.194878,
+		"distance_km":6,
+		"distance_mi":3
+		},
+		{
+		"neighborhood":"Thomaston",
+		"city":"Thomaston",
+		"state":"ME",
+		"country":"US",
+		"id":"KMETHOMA7",
+		"lat":44.076878,
+		"lon":-69.191078,
+		"distance_km":6,
+		"distance_mi":4
+		},
+		{
+		"neighborhood":"Rockport Harbor",
+		"city":"Rockport",
+		"state":"ME",
+		"country":"US",
+		"id":"KMEROCKP7",
+		"lat":44.186005,
+		"lon":-69.073936,
+		"distance_km":9,
+		"distance_mi":5
+		},
+		{
+		"neighborhood":"Hart Road",
+		"city":"Warren",
+		"state":"ME",
+		"country":"US",
+		"id":"KMEWARRE7",
+		"lat":44.151714,
+		"lon":-69.229652,
+		"distance_km":9,
+		"distance_mi":5
+		},
+		{
+		"neighborhood":"Saint George River GRN13",
+		"city":"Saint George",
+		"state":"ME",
+		"country":"US",
+		"id":"KMESAINT2",
+		"lat":44.035492,
+		"lon":-69.193497,
+		"distance_km":10,
+		"distance_mi":6
+		},
+		{
+		"neighborhood":"",
+		"city":"Cushing",
+		"state":"ME",
+		"country":"US",
+		"id":"ISTARTKK2",
+		"lat":44.042900,
+		"lon":-69.206398,
+		"distance_km":10,
+		"distance_mi":6
+		},
+		{
+		"neighborhood":"geo",
+		"city":"Warren",
+		"state":"ME",
+		"country":"US",
+		"id":"KMEWARRE5",
+		"lat":44.118755,
+		"lon":-69.253059,
+		"distance_km":10,
+		"distance_mi":6
+		},
+		{
+		"neighborhood":"7 Cedars",
+		"city":"Camden",
+		"state":"ME",
+		"country":"US",
+		"id":"KMECAMDE3",
+		"lat":44.202885,
+		"lon":-69.060631,
+		"distance_km":11,
+		"distance_mi":6
+		},
+		{
+		"neighborhood":"4 Union Street, Camden, Maine",
+		"city":"Camden",
+		"state":"ME",
+		"country":"US",
+		"id":"KMECAMDE6",
+		"lat":44.206089,
+		"lon":-69.066650,
+		"distance_km":11,
+		"distance_mi":6
+		},
+		{
+		"neighborhood":"Wayfarer Marine",
+		"city":"Camden",
+		"state":"ME",
+		"country":"US",
+		"id":"KMECAMDE2",
+		"lat":44.208477,
+		"lon":-69.060654,
+		"distance_km":11,
+		"distance_mi":7
+		},
+		{
+		"neighborhood":"Wheeler Bay",
+		"city":"Saint George",
+		"state":"ME",
+		"country":"US",
+		"id":"KMESAINT7",
+		"lat":44.006481,
+		"lon":-69.169235,
+		"distance_km":12,
+		"distance_mi":7
+		},
+		{
+		"neighborhood":"Sweet Water Farm",
+		"city":"Warren",
+		"state":"ME",
+		"country":"US",
+		"id":"KMEWARRE8",
+		"lat":44.103745,
+		"lon":-69.295013,
+		"distance_km":13,
+		"distance_mi":8
+		},
+		{
+		"neighborhood":"Lermond Pond",
+		"city":"Hope",
+		"state":"ME",
+		"country":"US",
+		"id":"KMEHOPE4",
+		"lat":44.220936,
+		"lon":-69.207954,
+		"distance_km":14,
+		"distance_mi":8
+		},
+		{
+		"neighborhood":"Heald Hwy",
+		"city":"Union",
+		"state":"ME",
+		"country":"US",
+		"id":"KMEUNION6",
+		"lat":44.213024,
+		"lon":-69.249634,
+		"distance_km":15,
+		"distance_mi":9
+		},
+		{
+		"neighborhood":"The Woods Rd",
+		"city":"Union",
+		"state":"ME",
+		"country":"US",
+		"id":"KMEUNION7",
+		"lat":44.212624,
+		"lon":-69.256111,
+		"distance_km":15,
+		"distance_mi":9
+		},
+		{
+		"neighborhood":"K1VVT@Hobbs Pond",
+		"city":"Hope",
+		"state":"ME",
+		"country":"US",
+		"id":"KMEHOPE5",
+		"lat":44.246067,
+		"lon":-69.180420,
+		"distance_km":15,
+		"distance_mi":9
+		},
+		{
+		"neighborhood":"St. George School",
+		"city":"Tenants Harbor",
+		"state":"ME",
+		"country":"US",
+		"id":"KMETENAN5",
+		"lat":43.968281,
+		"lon":-69.213310,
+		"distance_km":17,
+		"distance_mi":10
+		},
+		{
+		"neighborhood":"Blueberry Cove Camp",
+		"city":"Tenants Harbor",
+		"state":"ME",
+		"country":"US",
+		"id":"KMETENAN4",
+		"lat":43.959522,
+		"lon":-69.209435,
+		"distance_km":18,
+		"distance_mi":10
+		},
+		{
+		"neighborhood":"",
+		"city":"Waldoboro",
+		"state":"ME",
+		"country":"US",
+		"id":"KMEWALDO4",
+		"lat":44.096638,
+		"lon":-69.375320,
+		"distance_km":20,
+		"distance_mi":12
+		},
+		{
+		"neighborhood":"Back Cove Road",
+		"city":"Waldoboro",
+		"state":"ME",
+		"country":"US",
+		"id":"KMEWALDO5",
+		"lat":44.016216,
+		"lon":-69.356750,
+		"distance_km":21,
+		"distance_mi":12
+		},
+		{
+		"neighborhood":"North Waldoboro",
+		"city":"Waldoboro",
+		"state":"ME",
+		"country":"US",
+		"id":"KMEWALDO10",
+		"lat":44.184559,
+		"lon":-69.383888,
+		"distance_km":22,
+		"distance_mi":13
+		},
+		{
+		"neighborhood":"Ducktrap Village",
+		"city":"Lincolnville",
+		"state":"ME",
+		"country":"US",
+		"id":"KMELINCO2",
+		"lat":44.300938,
+		"lon":-68.999687,
+		"distance_km":23,
+		"distance_mi":13
+		}
+		]
+		}
+		}
+	}
+}

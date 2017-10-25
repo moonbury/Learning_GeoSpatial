@@ -5,12 +5,18 @@ a hillshaded map with a semi-transparent route, an
 elevation profile chart, and a weather summary.
 Similar to products from MapMyRun, RunKeeper, and
 Nike Plus.
+
+Run this file in Python 3.6, Python 2.7 does not work
 """
+
 from xml.dom import minidom
 import json
-import urllib.request
-import urllib.parse
-import urllib.error
+try:
+    import urllib.request
+    import urllib.parse
+    import urllib.error
+except:
+    import urllib2
 import math
 import time
 import logging
@@ -132,7 +138,10 @@ def wms(minx, miny, maxx, maxy, service, lyr, epsg, style, img, w, h):
     wms += "WIDTH={}&".format(w)
     wms += "HEIGHT={}&".format(h)
     wms += "FORMAT=image/jpeg"
-    wmsmap = urllib.request.urlopen(wms)
+    try:
+        wmsmap = urllib2.urlopen(wms)
+    except:
+        wmsmap = urllib.request.urlopen(wms)
     with open(img + ".jpg", "wb") as f:
         f.write(wmsmap.read())
 
@@ -283,11 +292,11 @@ image = srt.get_image((w, h), (miny, maxy), (minx, maxx),
                       300, zero_color=zero_clr, min_color=min_clr,
                       max_color=max_clr)
 # Save the image
-image.save(elv_img + ".jpg")
+image.save(elv_img + ".png")
 
 # Hillshade the elevation image
 log.info("Hillshading elevation data")
-im = Image.open(elv_img + ".jpg").convert("L")
+im = Image.open(elv_img + ".png").convert("L")
 dem = np.asarray(im)
 
 # Set up structure for a 3x3 windows to
@@ -488,7 +497,11 @@ api_key = "18a1726f53fa6efb"
 # centroid and the geolookup api
 geolookup_req = "http://api.wunderground.com/api/{}".format(api_key)
 geolookup_req += "/geolookup/q/{},{}.json".format(centy, centx)
-request = urllib.request.urlopen(geolookup_req)
+try:
+    request = urllib2.urlopen(geolookup_req)
+except:
+    request = urllib.request.urlopen(geolookup_req)
+    
 geolookup_data = request.read().decode("utf-8")
 
 # Cache lookup data for testing if needed
@@ -503,7 +516,12 @@ t = times[-1]
 history_req = "http://api.wunderground.com/api/{}".format(api_key)
 name_info = [t.tm_year, t.tm_mon, t.tm_mday, route_url.split(".")[0]]
 history_req += "/history_{0}{1:02d}{2:02d}/q/{3}.json" .format(*name_info)
-request = urllib.request.urlopen(history_req)
+
+try:
+    request = urllib2.urlopen(history_req)
+except:
+    request = urllib.request.urlopen(history_req)
+    
 weather_data = request.read()
 
 # Cache weather data for testing

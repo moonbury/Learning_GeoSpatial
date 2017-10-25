@@ -1,6 +1,6 @@
-import urllib.request
-import urllib.parse
-import urllib.error
+import urllib2 #.request
+#import urllib.parse
+#import urllib.error
 from xml.dom import minidom
 
 # Nextbus API command mode
@@ -35,7 +35,7 @@ url += "&r=" + route
 url += "&t=" + epoch
 
 # Access the REST URL
-feed = urllib.request.urlopen(url)
+feed = urllib2.urlopen(url)
 
 if feed:
     # Parse the xml feed

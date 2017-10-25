@@ -53,8 +53,8 @@ def astar(start, end, h, g):
 
 # Width and height
 # of grids
-w = 5
-h = 5
+w = 10
+h = 10
 
 # Start location:
 # Lower left of grid

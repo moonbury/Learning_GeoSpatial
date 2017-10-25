@@ -1,6 +1,7 @@
-import urllib.request
-import urllib.parse
-import urllib.error
+import urllib2
+#import urllib.request
+#import urllib.parse
+#import urllib.error
 from xml.dom import minidom
 import time
 
@@ -16,7 +17,7 @@ def nextbus(a, r, c="vehicleLocations", e=0):
     nbapi = "http://webservices.nextbus.com"
     nbapi += "/service/publicXMLFeed?"
     nbapi += "command={}&a={}&r={}&t={}".format(c, a, r, e)
-    xml = minidom.parse(urllib.request.urlopen(nbapi))
+    xml = minidom.parse(urllib2.urlopen(nbapi))
     # If more than one vehicle, just get the first  
     bus = xml.getElementsByTagName("vehicle")[0]
     if bus:  
@@ -46,7 +47,7 @@ def nextmap(a, r, mapimg):
     osmapi += "maptype=osmarenderer&"
     # Use a red, pushpin marker to pin point the bus
     osmapi += "markers={},{},red-pushpin".format(lat, lon)
-    img = urllib.request.urlopen(osmapi)
+    img = urllib2.urlopen(osmapi)
     # Save the map image
     with open("{}.png".format(mapimg), "wb") as f:
         f.write(img.read())

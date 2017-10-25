@@ -1,7 +1,8 @@
 import sys
-import urllib.request
-import urllib.parse
-import urllib.error
+import urllib2
+#import urllib.request
+#import urllib.parse
+#import urllib.error
 from xml.dom import minidom
 import math
 try:
@@ -17,7 +18,7 @@ def nextbus(a, r, c="vehicleLocations", e=0):
     nbapi = "http://webservices.nextbus.com"
     nbapi += "/service/publicXMLFeed?"
     nbapi += "command=%s&a=%s&r=%s&t=%s" % (c, a, r, e)
-    xml = minidom.parse(urllib.request.urlopen(nbapi))
+    xml = minidom.parse(urllib2.urlopen(nbapi))
     # If more than one vehicle, just get the first
 
     bus = xml.getElementsByTagName("vehicle")[0]
@@ -49,7 +50,9 @@ def wms(minx, miny, maxx, maxy, service, lyr, img, w, h):
     wms += "WIDTH=%s&" % w
     wms += "HEIGHT=%s&" % h
     wms += "FORMAT=image/png"
-    wmsmap = urllib.request.urlopen(wms)
+    print(wms)
+    wmsmap = urllib2.urlopen(wms)
+    print("done")
     with open(img + ".png", "wb") as f:
         f.write(wmsmap.read())
 
